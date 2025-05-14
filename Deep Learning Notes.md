@@ -186,8 +186,6 @@ $$ \mathbf{Q}_i = \mathbf{X} \mathbf{W}_i^Q $$
 $$ \mathbf{K}_i = \mathbf{X} \mathbf{W}_i^K $$
 $$ \mathbf{V}_i = \mathbf{X} \mathbf{W}_i^V $$
 where $\mathbf{X}$ is the input matrix, and $\mathbf{W}_i^Q, \mathbf{W}_i^K, \mathbf{W}_i^V$ are the query, key and value weights matrices for the $i$th attention block, respectively.
-- There are 96 such layers of attention blocks, interlaced with 96 layers of perceptrons, which wew will see next.
+- There are 96 such layers of attention blocks, interlaced with 96 layers of perceptrons, which we will see next.
 
 
-- Use of attention heads?
-- Difference between value matrix and the key matrix with relation to the query.
