@@ -188,4 +188,15 @@ $$ \mathbf{V}_i = \mathbf{X} \mathbf{W}_i^V $$
 where $\mathbf{X}$ is the input matrix, and $\mathbf{W}_i^Q, \mathbf{W}_i^K, \mathbf{W}_i^V$ are the query, key and value weights matrices for the $i$th attention block, respectively.
 - There are 96 such layers of attention blocks, interlaced with 96 layers of perceptrons, which we will see next.
 
-
+> ### Perplexity
+>
+> Perplexity is used to define how well a model predicts a given dataset. We use the following depiction:
+> $$ P = 2^{-H} $$
+> where H is the cross-entropy defined as the measure of difference between the model's prediction and the actual labels:
+> $$ H = -\sum(y_{\text{true}} \ \times \log(y_{\text{pred}})) $$
+> such that $y_\text{true}$ is the actual label and $y_\text{pred}$ is the model's prediction.
+>
+> Perplexity is interpreted as follows:
+> - A lower perplexity indicates that the model is better at predicting the next character or word in a sequence.
+> - A higher perplexity indicates that the model is worse at predicting the next character or word in a sequence.
+> - A perplexity of 1 indicates that the model is perfect, and it can predict the next character or word in a sequence with certainty.
